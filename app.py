@@ -289,7 +289,7 @@ def load_local_llm(model_id: str):
     tokenizer = AutoTokenizer.from_pretrained(model_id)
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
-        torch_dtype=torch.float32,
+        torch_dtype=torch.float16,
     )
     model.eval()
     return {"tokenizer": tokenizer, "model": model}
@@ -427,8 +427,8 @@ def clear_all_history() -> None:
 # --------------- Auth ---------------
 
 USERS = {
-    "admin": "admin123",
-    "user": "password",
+    os.environ.get("ADMIN_USERNAME", "admin"): os.environ.get("ADMIN_PASSWORD", "admin123"),
+    os.environ.get("USER_USERNAME", "user"): os.environ.get("USER_PASSWORD", "password"),
 }
 
 
