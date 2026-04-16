@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Models & embeddings (large HuggingFace cache)
+models/
+*.bin
+*.safetensors
+*.gguf
+
+# ChromaDB persistent store
+chroma_db/
+
+# Logs & audit trail
+logs/
+
+# Streamlit
+.streamlit/
+
+# OS
+.DS_Store
+Thumbs.db

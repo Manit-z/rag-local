@@ -1,0 +1,10 @@
+streamlit
+PyMuPDF
+numpy
+scikit-learn
+transformers
+torch
+sentencepiece
+sentence-transformers
+accelerate
+chromadb
