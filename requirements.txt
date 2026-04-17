@@ -4,6 +4,7 @@ numpy
 scikit-learn
 transformers
 torch
+torchvision
 sentencepiece
 sentence-transformers
 accelerate
