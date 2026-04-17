@@ -1,3 +1,12 @@
+---
+title: Fin-RAG
+emoji: 📊
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
+
 This project is a local Financial RAG demo that lets you upload a PDF, ask questions, and get grounded answers with page citations.
 It is intentionally compact and implemented mostly in one file, which makes it great for learning the full RAG pipeline end-to-end.
 
